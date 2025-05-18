@@ -1,16 +1,16 @@
-# droovo_mobile
+# Droovo App
 
-droovo mobile app
+**Droovo** is a carpooling mobile application built for Tunisian citizens to connect and share rides. The app helps users discover available rides near their current location, book seats, and communicate with other passengers or drivers in real-time.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Search for rides based on location
+- Book available rides
+- In-app chat with ride members
+- User-friendly experience optimized for carpooling in Tunisia
 
-A few resources to get you started if this is your first Flutter project:
+## Website
+[https://droovo.tn](https://droovo.tn)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contact
+📧 droovo.app@gmail.com

@@ -1,0 +1,12 @@
+Type	Use Case	Storage Method
+🔐 Auth token / login state	Stay logged in across app launches	SharedPreferences
+🧑 User profile	Quick display of name, picture, etc.	SharedPreferences / Hive
+🗺️ Last pickup/destination	Pre-fill recent locations	SharedPreferences / Hive
+🚗 Cached cars / trips	Reduce Firebase reads, offline fallback	Hive / SQLite
+⚙️ Settings (theme/lang)	Keep user preferences	SharedPreferences
+📅 Recent ride history	Show last 5–10 rides even offline	Hive or SQLite
+📍Last known location	Start map at same spot	SharedPreferences
+📦 Pending API data	Offline trip requests to sync later	Hive or SQLite
+
+
+security chivement and check if the new login happen all shared pers

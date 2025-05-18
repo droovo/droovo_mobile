@@ -1,0 +1,135 @@
+
+## ✅ HIGH PRIORITY
+/check why history is not working well + cancel and update ride
+### 🔐 **Authentication & Security**
+- [✔] Ensure permission & location check on every entry point (✔ already in widget tree)
+- [✔] Edit name in profile (✔ done)
+- [✔] exit app popup (✔ done)
+- [X] Delete account: **Delete all user data but keep the user ID,DisplayName**.
+- [X] Security
+
+### 🚗 **Rides**
+- [✔] In ride creation, **filter cars to user-owned only**
+- [✔] Show ride details (outer view)
+- [✔] Driver is auto-assigned when creating a ride (✔ done)
+- [✔] Cars must have seat already Locked if the DRIVER choose less then 4 seats
+- [✔] In ride creation, the number of seats available is  car.seats - 1
+- [✔] update the remaining seats
+- [✔] the passengers list s2 not working
+- [ ] Update ride
+- [✔] Cancel ride
+
+accept request too in ccept member in group chat
+- [ ] If ride is done → update `status = closed/cancelled`, and close all related orders
+- [X] In ride creation, add mode anonymous (X)
+- [ ] Auto-assign available seat if chosen one is reserved; show message if full
+if ride is cancelled then reformat all request messgaes
+
+
+### 🚗 **Cars**
+- [✔] cars should be set the seats on creation ( on creating car seat id = 1 always is reserved)
+- [✔] check car creation and change the ride UI done
+- [✔] car plate unique (need test)
+- [✔] Cars must have seat ID = 1 reserved (✔ done)
+- [✔] Cars must have seat already Locked if the DRIVER choose less then 4 seats
+- [X] add bagage store
+- [X] Change depend on the group chat for more details in canceled/expired ride in lib/pages/couvoiturage/Screens/booking/booking_step1.dart:183
+
+### 💬 **Messages**
+- [✔] Modify message UI
+- [✔] Add ride details
+- [X] "Start Ride" button
+- [✔] lock the messages if the member is not accepted
+- [✔] contact: do not show last message . status= Request and it"s !admin
+- [ ] in accepting request if the car's seats are selected and the user selected a other chair then the system will auto assing for him a new seat if available else send a message no seats availble ride is completed)
+- [ ] leave group should notify driver and send a message someone left and update ride.passengers , user.groups , group chat
+- [ ] Full CRUD: add, delete, update messages
+
+---
+// to add check on car.seats.length >= to seatsController in ride creation
+
+## ⚠️ MEDIUM PRIORITY
+
+### 🔍 **Search & Routes**
+- [ ] Search implementation for rides/users/cars
+- [ ] search by id in the search main screen
+- [ ] Define route structure & navigation flow
+- [ ] to add search using the status in history
+
+### 🎛️ **Driver Verification**
+- [ ] If not a driver: show “ID not verified”
+- [ ] If a driver: show “Driver not verified”(in security level screen)
+- [ ] Toggle switch to activate **driver mode**
+
+---
+
+## 💡 NICE TO HAVE
+
+### 📬 **Request Order Handling**
+- [ ] Ensure one-time ride request (block spam/multiple submissions)
+
+### 📱 **UI & Feedback**
+- [ ] Add feedback feature (we have a feedback popup)
+- [ ] Add “Je cherche” functionality (user intent form)
+- [ ] Improve main screen load time
+
+---
+
+### ✅ PROPOSED ORDERED WORKFLOW:
+
+1. 🔐 Finalize account security & deletion rules  
+2. 🚗 Ensure ride creation UX handles seats, driver link  
+3. 💬 Add messaging UI + start-ride trigger  
+4. 🎛 Add toggle + verification display logic  
+5. 📬 Prevent multiple ride requests (anti-spam)  
+6. 🔍 Enable search & routing  
+7. 📱 Add feedback + je cherche
+7. 🔍 external link to redirect to app
+8.  Mail
+9. add something to make the shcluder run every nigth to check rides and update them
+10. adding pipelines to project to auto build
+
+
+
+
+
+
+
+
+
+
+
+
+
+//what to add
+check the user permission and location activated in every entry (done in widget tree)
+
+change the messages UI(add the ride details and the start ride button)
+
+messages ( add , delete , modify ....)
+
+rides ( update, remove, outer view, if the ride in done the close the orders (status of the ride is closed,cancelled)
+
+search
+
+routes
+
+edit name in profile  (to insure the name is good selected) (done)
+
+security
+
+delete account (delete all infos but keep the user and it's id)
+
+ajouter feedback
+
+ajouter je cherche
+
+/// what to change
+if the user is not a driver the show id not verified if is driver then driver not verified
+to activate the driver mode a toggle switch to be selected to activate it
+
+
+the request order should be done one time ( spam will make it trash)
+
+load of the main screen
+
